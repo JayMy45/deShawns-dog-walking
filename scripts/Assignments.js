@@ -39,12 +39,12 @@ export const Assignments = () => {
     for (const currentPet of pets) {
         const currentPetWalker = findWalker(currentPet, walkers)
         const currentPetCity = findCity(currentPet, walkers)
-        assignmentHTML += `
-            <li>
-                ${currentPet.name} is being walked by
-                ${currentPetWalker} in ${currentPetCity}
-            </li>
-        `
+        assignm
+            < li >
+            ${ currentPet.name } is being walked by
+                ${ currentPetWalker } in ${ currentPetCity }
+            </li >
+    `
     }
 
     assignmentHTML += "</ul>"
