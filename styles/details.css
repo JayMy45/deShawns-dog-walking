@@ -5,9 +5,8 @@
 
 .detail--column {
     flex-basis: 24%;
-    margin: 0 1rem;
+    margin: 2rem;
     border: 1px dotted goldenrod;
-    padding-left: 1rem;
 }
 
 .assignments {
