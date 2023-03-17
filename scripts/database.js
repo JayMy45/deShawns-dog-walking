@@ -29,18 +29,33 @@ const database = {
         { id: 9, name: "Salem", walkerId: 9 },
         { id: 10, name: "Panda", walkerId: 7 }
     ],
+    walkerCities: [
+        { id: 1, walkerId: 10, cityId: 1 },
+        { id: 2, walkerId: 8, cityId: 6 },
+        { id: 3, walkerId: 5, cityId: 4 },
+        { id: 4, walkerId: 9, cityId: 10 },
+        { id: 5, walkerId: 2, cityId: 3 },
+        { id: 6, walkerId: 4, cityId: 7 },
+        { id: 7, walkerId: 1, cityId: 5 },
+        { id: 8, walkerId: 7, cityId: 9 },
+        { id: 9, walkerId: 3, cityId: 2 },
+        { id: 10, walkerId: 6, cityId: 8 },
+        { id: 11, walkerId: 6, cityId: 9 },
+        { id: 12, walkerId: 9, cityId: 7 },
+        { id: 13, walkerId: 5, cityId: 7 },
+        { id: 14, walkerId: 10, cityId: 2 },
+    ],
     cities: [
-        { id: 1, name: "Chicago" },
-        { id: 1, name: "White Plains" },
-        { id: 1, name: "Sarasota" },
-        { id: 1, name: "San Diego" },
-        { id: 1, name: "Boise" },
-        { id: 1, name: "Denver" },
-        { id: 1, name: "Tucson" },
-        { id: 1, name: "Phoenix" },
-        { id: 1, name: "Minneapolis" },
         { id: 1, name: "Pittsburgh" },
-
+        { id: 2, name: "Minneapolis" },
+        { id: 3, name: "Phoenix" },
+        { id: 4, name: "Tucson" },
+        { id: 5, name: "Denver" },
+        { id: 6, name: "Boise" },
+        { id: 7, name: "San Diego" },
+        { id: 8, name: "Sarasota" },
+        { id: 9, name: "White Plains" },
+        { id: 10, name: "Chicago" }
     ]
 }
 
@@ -50,5 +65,13 @@ export const getWalkers = () => {
 
 export const getPets = () => {
     return database.pets.map(pet => ({ ...pet }))
+}
+
+export const getWalkerCities = () => {
+    return database.walkerCities.map(walkerCity => ({ ...walkerCity }))
+}
+
+export const getCities = () => {
+    return database.cities.map(city => ({ ...city }))
 }
 
