@@ -67,3 +67,20 @@ export const Pets = () => {
 
     return petsHTML
 }
+
+
+/*  itemClicked = clickEvent.target
+      "<li id="pet--${pet.id}">""
+
+     if (itemClicked.id.startsWith("pet") {
+         "id = "   
+
+    const [, petId] = itemClicked.id.split("--")
+                        "<li id="pet--${pet.id}"
+                        ["pet", "pet.id"]
+                          [[0], [1]]
+
+    const [[0], [1]] = ["pet", "pet.id"]
+    
+    const [,petId] = "pet.id"
+}) */

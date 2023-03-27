@@ -3,6 +3,10 @@
 
 /*Typography
 --------------------------------------------------------------*/
+body {
+	margin: 3rem;
+}
+
 body,
 button,
 input,
@@ -22,4 +26,13 @@ h5,
 h6 {
 	font-family: "Patua One", serif;
 	letter-spacing: 2px;
+}
+
+h1,
+.dw__h2 {
+	text-align: center;
+}
+
+.dw__div {
+	margin-bottom: 1rem;
 }
