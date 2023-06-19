@@ -97,6 +97,42 @@ const assignedCityNames = (walkArray) => {
     return cityNameString
 }
 
+
+/* 
+add city names when matched with , and "and" at the last entry along with a period.
+const assignedCityNames = (walkArray) => {
+    const cityNames = [];
+
+    for (const walker of walkArray) {
+        for (const city of cities) {
+            if (walker.cityId === city.id) {
+                cityNames.push(city.name);
+            }
+        }
+    }
+
+    let cityNameString = '';
+
+    // handle the case when there are no cities
+    if (cityNames.length === 0) {
+        cityNameString = 'No cities assigned.';
+    }
+    // handle the case when there is only one city
+    else if (cityNames.length === 1) {
+        cityNameString = cityNames[0];
+    }
+    // handle the case when there are multiple cities
+    else {
+        cityNameString = cityNames.slice(0, -1).join(", "); // join all but the last city with commas
+        cityNameString += ` and ${cityNames[cityNames.length - 1]}`; // add "and" before the last city
+    }
+
+    cityNameString += ".";
+
+    return cityNameString;
+}
+*/
+
 export const Walkers = () => {
     let walkerHTML = "<ul>"
 
